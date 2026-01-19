@@ -1,6 +1,5 @@
 import { GoogleGenAI, Type, Schema } from "@google/genai";
 
-// process.env ではなく Vite の環境変数読み込み方式に書き換えます
 const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_GEMINI_API_KEY });
 
 export interface AIAnalysisResult {
